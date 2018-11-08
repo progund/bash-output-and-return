@@ -1,10 +1,14 @@
 #!/bin/bash
 
-file_count=$(ls *.sh|wc -l)
+#!/bin/bash
 
-if [ $file_count -eq 0 ]
+ls *.sh &> /dev/null
+
+if [[ $? != 0 ]]
 then
     exit 1
+else
+    exit 0
 fi
-exit 0
+
    
