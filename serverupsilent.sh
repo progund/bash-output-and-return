@@ -16,4 +16,8 @@ then
     exit 1
 fi
 echo "$SERVER is up"
-exit 0
+# Optional:
+#exit 0
+# But the echo statement will terminate
+# successfully, so 0 will be returned
+# anyway
