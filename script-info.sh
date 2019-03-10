@@ -1,9 +1,9 @@
 #!/bin/bash
 
-for file in $(ls *.sh)
+for file in *.sh
 do
     echo "$file"
-    ls -al $file
-    lsattr $file
+    ls -al "$file"
+    lsattr "$file"
     echo
 done
