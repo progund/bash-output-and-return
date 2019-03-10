@@ -7,7 +7,7 @@ then
 fi
 SERVER=$1
 
-ping -q -W 1 -c 1 $SERVER
+ping -q -W 1 -c 1 "$SERVER"
 PING_RET=$?
 
 if [ $PING_RET -ne 0 ]
